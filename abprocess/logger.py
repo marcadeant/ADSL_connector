@@ -15,7 +15,7 @@ class LogFileHandler:
 
         self.logger.setLevel(self.log_level)
 
-        file_handler = RotatingFileHandler('/Users/amarcade/Documents/ADSL_connector/abprocess.log', 'a', 100000, 1)
+        file_handler = RotatingFileHandler('/Users/amarcade/Documents/ADSL_connector/abprocess.log', 'a', 1000000, 1)
         file_handler.setLevel(self.log_level)
         file_handler.setFormatter(self.formatter)
 

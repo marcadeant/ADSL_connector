@@ -22,7 +22,6 @@ class Authenticator:
         logger.info(f'Searching for this url :{self.host_url}')
 
         self.browser.get(self.host_url)
-        logger.error('connexion to the server failed. Please check your internet access and retry the process')
 
         try:
             logger.info('connexion to ADSL portail..')

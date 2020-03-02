@@ -21,5 +21,5 @@ PLAYER_NAME_XPATH = {'Simon': '/html/body/div[10]/ul/li[5]/a',
 
 
 PICK_PLAYER_MENU_ID = 'CHAMP_TYPE_1-button'
-TIME_SLEEP = 3
+TIME_SLEEP = 5
 

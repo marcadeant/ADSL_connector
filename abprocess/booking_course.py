@@ -19,13 +19,11 @@ class BookingCourse:
     tennis_course_hour: int  # format 24h
     tennis_course_date: str  # format dd-mm-yyyy
     player_name: str
-    authenticator: Authenticator
     times_count: int = 0
     booking: bool = False
 
     def __post_init__(self):
         self.tennis_course_day_datetime = datetime.strptime(self.tennis_course_date, '%d/%m/%Y')
-        self.browser = self.authenticator.browser
 
     def __repr__(self):
         return f"date: {self.tennis_course_date}, tennis court :{self.tennis_course_name}, hour: {self.tennis_course_hour}"
@@ -81,7 +79,6 @@ class BookingCourse:
             logger.error(f'The session {self.__repr__()} already reserved, {tennis_court_name}')
 
     def booking_courses_by_priorities(self, browser: webdriver.Chrome):
-
 
         for tennis_court_name in TENNIS_COURT_NAME.keys():
 
