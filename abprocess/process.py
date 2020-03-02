@@ -34,7 +34,7 @@ def main():
     logger.info('From main : Starting Process')
 
     logger.info('Reading parameters...')
-    with open('parameters.json', 'r') as json_file:
+    with open('../parameters.json', 'r') as json_file:
         parameters = json.load(json_file)
     logger.info(f"Starting process for date : {parameters['date']}, hour : {parameters['hour']}, player : {parameters['player_name']} ")
     start = datetime.now()

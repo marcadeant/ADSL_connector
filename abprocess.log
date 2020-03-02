@@ -68,3 +68,38 @@
 2020-03-02 13:13:47,401 :: INFO :: booking_course :: Finding player name : Sandro
 2020-03-02 13:13:52,462 :: INFO :: booking_course :: The sessions date: 02/03/2020, tennis court :A, hour: 19 has been successfully reserved
 2020-03-02 13:13:57,641 :: INFO :: main :: process finished in 76 seconds
+2020-03-02 13:18:00,914 :: INFO :: <module> :: From main : Starting Process
+2020-03-02 13:18:00,915 :: INFO :: <module> :: Reading parameters...
+2020-03-02 13:21:01,205 :: INFO :: <module> :: From main : Starting Process
+2020-03-02 13:21:01,205 :: INFO :: <module> :: Reading parameters...
+2020-03-02 13:21:54,994 :: INFO :: main :: From main : Starting Process
+2020-03-02 13:21:54,994 :: INFO :: main :: Reading parameters...
+2020-03-02 13:21:54,995 :: INFO :: main :: Starting process for date : 02/03/2020, hour : 19, player : Simon 
+2020-03-02 13:21:54,995 :: INFO :: main :: Launching Chrome application
+2020-03-02 13:21:57,097 :: INFO :: adsl_connector :: Searching for this url :https://www.adsltennis.fr/_start/index.php?club=57920017
+2020-03-02 13:21:58,553 :: INFO :: adsl_connector :: connexion to ADSL portail..
+2020-03-02 13:21:58,556 :: ERROR :: adsl_connector :: connexion to ADSL portail failed. Please check your internet access and retry the process
+2020-03-02 13:23:01,204 :: INFO :: <module> :: From main : Starting Process
+2020-03-02 13:23:01,204 :: INFO :: <module> :: Reading parameters...
+2020-03-02 13:23:01,205 :: INFO :: <module> :: Starting process for date : 02/03/2020, hour : 19, player : Simon 
+2020-03-02 13:23:01,205 :: INFO :: <module> :: Launching Chrome application
+2020-03-02 13:23:03,176 :: INFO :: adsl_connector :: Searching for this url :https://www.adsltennis.fr/_start/index.php?club=57920017
+2020-03-02 13:23:04,319 :: INFO :: adsl_connector :: connexion to ADSL portail..
+2020-03-02 13:23:04,437 :: INFO :: adsl_connector :: User name verified
+2020-03-02 13:23:09,569 :: INFO :: adsl_connector :: password verified
+2020-03-02 13:23:14,716 :: INFO :: adsl_connector :: connexion succeeded
+2020-03-02 13:23:24,871 :: INFO :: booking_course :: Trying to reserve : A
+2020-03-02 13:23:35,424 :: ERROR :: booking_course :: The session date: 02/03/2020, tennis court :A, hour: 19 already reserved, A
+2020-03-02 13:23:35,424 :: INFO :: booking_course :: Trying to reserve : B
+2020-03-02 13:23:40,838 :: ERROR :: booking_course :: The session date: 02/03/2020, tennis court :A, hour: 19 already reserved, B
+2020-03-02 13:23:40,838 :: INFO :: booking_course :: Trying to reserve : C
+2020-03-02 13:23:46,266 :: ERROR :: booking_course :: The session date: 02/03/2020, tennis court :A, hour: 19 already reserved, C
+2020-03-02 13:23:46,266 :: INFO :: booking_course :: Trying to reserve : D
+2020-03-02 13:23:51,705 :: ERROR :: booking_course :: The session date: 02/03/2020, tennis court :A, hour: 19 already reserved, D
+2020-03-02 13:23:51,705 :: INFO :: booking_course :: Trying to reserve : E
+2020-03-02 13:23:57,120 :: ERROR :: booking_course :: The session date: 02/03/2020, tennis court :A, hour: 19 already reserved, E
+2020-03-02 13:23:57,120 :: INFO :: booking_course :: Trying to reserve : F
+2020-03-02 13:24:02,565 :: INFO :: booking_course :: Picking players menu...
+2020-03-02 13:24:07,667 :: INFO :: booking_course :: Finding player name : Simon
+2020-03-02 13:24:12,791 :: INFO :: booking_course :: The sessions date: 02/03/2020, tennis court :A, hour: 19 has been successfully reserved
+2020-03-02 13:24:18,047 :: INFO :: <module> :: process finished in 76 seconds
