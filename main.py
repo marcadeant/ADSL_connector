@@ -8,6 +8,7 @@ from datetime import datetime
 
 from abprocess.logger import LogFileHandler
 from abprocess.process import Process
+import os
 
 logger = logging.getLogger()
 LogFileHandler(logger=logger).set_log_configuration()
@@ -22,7 +23,8 @@ logger.info(
 start = datetime.now()
 logger.info('Launching Chrome application')
 # Starting a new browser session
-browser = webdriver.Chrome('/Users/amarcade/Documents/ADSL_connector/abprocess/chromedriver')
+path = os.getcwd()
+browser = webdriver.Chrome(path+'/abprocess/chromedriver')
 authenticator = Authenticator(browser=browser)
 booking_course = BookingCourse(tennis_course_date=parameters['date'], tennis_course_hour=parameters['hour'],
                                tennis_course_name='A',

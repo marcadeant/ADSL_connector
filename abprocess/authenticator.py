@@ -5,7 +5,7 @@ import logging
 from time import sleep
 from selenium import webdriver
 from abprocess.constants import USER_NAME_XPATH, PASSWORD_XPATH, CONFIRM_BUTTON_XPATH, TIME_SLEEP
-
+import os
 logger = logging.getLogger()
 
 @dataclass
@@ -16,7 +16,7 @@ class Authenticator:
 
     def adsl_connector(self):
 
-        with open('/Users/amarcade/Documents/ADSL_connector/auth.json', 'r') as json_file:
+        with open(os.getcwd() + '/auth.json', 'r') as json_file:
             token = json.load(json_file)
 
         logger.info(f'Searching for this url :{self.host_url}')
